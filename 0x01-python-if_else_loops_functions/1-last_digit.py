@@ -9,11 +9,10 @@ else:
     num = 10
 
 if (number % num) > 5:
-    print("Last digit of {:d} is {:d} and is greater than 5"\
-            .format(number, number % num))
+    print("Last digit of {:d} is {:d} and is greater than 5"
+          .format(number, number % num))
 elif (number % num) < 6:
-    print("Last digit of {:d} is {:d} and is less than 6 and not 0"\
-            .format(number, number % num))
+    print("Last digit of {:d} is {:d} and is less than 6 and not 0"
+          .format(number, number % num))
 elif (number % num) == 0:
-    print("Las digit of {:d} is {:d} and is 0"\
-            .format(number, number % num))
+    print("Las digit of {:d} is {:d} and is 0".format(number, number % num))
