@@ -4,8 +4,8 @@
 
 def uppercase(str):
     for i in range(len(str)):
-        a = ord(str[i])
         if ord(str[i]) >= 97 and ord(str[i]) <= 122:
+            a = ord(str[i])
             a -= 32
         else:
             a = ord(str[i])
