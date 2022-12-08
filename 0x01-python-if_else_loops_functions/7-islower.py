@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-
+# checks if c is a lower case character
 def islower(c):
-    for i in range(97, 123):
-        a = chr(i)
-        if c == a:
-            return True
-        else:
-            return False
+    if ord(c) >= 97 and ord(c) <= 122:
+        return True
+    else:
+        return False
