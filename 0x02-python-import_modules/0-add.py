@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 
-from add_0.py import add
+import add_0
 
 sum1 = add(a, b)
 a = 1
 b = 2
-if a and b:
-    print("{} + {} = {}".format(a, b, sum1))
+print("{} + {} = {}".format(a, b, sum1))
