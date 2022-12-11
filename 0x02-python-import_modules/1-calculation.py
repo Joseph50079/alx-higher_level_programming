@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from calculation_1 import add, sub, mul, div
+import calculation_1
+# add, sub, mul, div
 
 a = 10
 b = 5
