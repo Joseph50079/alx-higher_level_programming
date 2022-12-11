@@ -8,7 +8,7 @@ if 1 argument returns 1 arguments and else multiple arguments and a newline
 from sys import argv
 if __name__ == "__main__":
     if (len(argv)) == 1:
-        print("0 argument.")
+        print("0 arguments.")
     else:
         if len(argv) == 2:
             print("{} argument:".format(len(argv) - 1))
