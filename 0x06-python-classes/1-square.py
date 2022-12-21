@@ -6,4 +6,4 @@
 class Square:
     '''private attribute size'''
     def __init__(self, size):
-        __size = size
+        self._size = size
