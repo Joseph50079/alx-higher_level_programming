@@ -8,8 +8,8 @@ class Square:
     def __init__(self, size=0):
         '''initializing and creating private instance attributee'''
         if isinstance(size, int):
-            self.__size = size
             if size < 0:
                 raise ValueError("size must be integer")
+            self.__size = size
         else:
             raise TypeError("size must be integer")
