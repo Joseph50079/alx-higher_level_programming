@@ -33,7 +33,16 @@ class Square:
         '''
         self.__size *= self.__size
         return self.__size
-    @settermethod
+
+    @property
+    def size(self):
+        '''This will get the attribute of Square
+        Return:
+            returns the attribute of Square
+        '''
+        return self.__size
+
+    @size.setter
     def size(self, value):
         '''This will set a value of square
         Args:
