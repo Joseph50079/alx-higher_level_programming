@@ -51,7 +51,7 @@ class Square:
             returns the value (new square value)
         '''
         if isinstance(value, int):
-            if vlaue < 0:
+            if value < 0:
                 raise ValueError("size must be >= 0")
             self.__size = value
         else:
