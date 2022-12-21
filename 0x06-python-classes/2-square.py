@@ -12,11 +12,13 @@ class Square:
     '''
     def __init__(self, size=0):
         '''initializing and creating private instance attribute
-        size(int): This size of squares
+        Args:
+            size(int): This size of squares
         '''
+
         if isinstance(size, int):
             if size < 0:
                 raise ValueError("size must be >= 0")
             self.__size = size
         else:
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
