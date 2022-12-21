@@ -4,6 +4,7 @@
 
 
 class Square:
+    '''define the class attribute to private'''
     try:
         def __init__(self, sizee=0):
             '''initializing and creating private instance attributee'''
