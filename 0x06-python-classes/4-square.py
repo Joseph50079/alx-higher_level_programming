@@ -46,10 +46,14 @@ class Square:
     def size(self, value):
         '''This will set a value of square
         Args:
-
             value: value of square
         Return:
             returns the value (new square value)
         '''
-        self.__size = value
+        if isinstance(value, int):
+            if vlaue < 0:
+                raise ValueError("size must be >= 0")
+            self.__size = value
+        else:
+            raise TypeError("size must be an integer")
         return self.__size
