@@ -38,7 +38,7 @@ class Square:
         if size is less than zeeero it should print a new line
         else print square
         '''
-        if size <= 0:
+        if self.__size <= 0:
             print('')
         else:
             for i in range(size):
