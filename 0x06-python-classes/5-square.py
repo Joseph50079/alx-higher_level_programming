@@ -33,6 +33,18 @@ class Square:
         '''
         self.__size *= self.__size
         return self.__size
+    def my_print(self):
+        '''my_print prints square using '#'
+        if size is less than zeeero it should print a new line
+        else print square
+        '''
+        if size <= 0:
+            print('')
+        else:
+            for i in range(size):
+                for n in range(size):
+                    print('#', end='')
+                print('')
 
     @property
     def size(self):
@@ -57,16 +69,3 @@ class Square:
         else:
             raise TypeError("size must be an integer")
         return self.__size
-
-    def my_print(self):
-        '''my_print prints square using '#'
-        if size is less than zeeero it should print a new line
-        else print square
-        '''
-        if size <= 0:
-            print('')
-        else:
-            for i in range(size):
-                for n in range(size):
-                    print('#', end='')
-                print('')
