@@ -78,6 +78,11 @@ class Square:
             size(int): This size of squares
         '''
 
+        if isinstance(position, tuple) and list(map(type, v)) == [int, int]:
+            if (position[0] and position[1]) >= 0:
+                self.__position = position
+        else:
+            raise TypeError('position must be a tuple of 2 positive integers')
         if isinstance(size, int):
             if size < 0:
                 raise ValueError("size must be >= 0")
@@ -106,5 +111,7 @@ class Square:
         else:
             for i in range(self.__size):
                 for n in range(self.__size):
+                    for m in range(position[0]):
+                        print('{}'.format('_'), end='')
                     print('#', end='')
                 print('')
