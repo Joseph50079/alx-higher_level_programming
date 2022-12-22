@@ -33,6 +33,7 @@ class Square:
         '''
         self.__size *= self.__size
         return self.__size
+
     def my_print(self):
         '''my_print prints square using '#'
         if size is less than zeeero it should print a new line
