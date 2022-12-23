@@ -16,7 +16,8 @@ class Square:
             Args:
                 size(int): This size of squares
         '''
-        if isinstance(position, tuple) and list(map(type, position)) == [int, int]:
+        if isinstance(position, tuple) and \
+                list(map(type, position)) == [int, int]:
             if (position[0] and position[1]) >= 0:
                 self.__position = position
         else:
@@ -94,7 +95,8 @@ class Square:
         Return:
             return new value
         '''
-        if isinstance(position, tuple) and list(map(type, position)) == [int, int]:
+        if isinstance(position, tuple) and \
+                list(map(type, position)) == [int, int]:
             if (value[0] and value[1]) > 0:
                 self.__position = value
         else:
