@@ -18,8 +18,10 @@ int check_cycle(listint_t *list)
 			return (1);
 		}
 		else
+		{
 			temp = temp->next;
 			ptr = ptr->next->next;
+		}
 	}
 
 	return (0);
