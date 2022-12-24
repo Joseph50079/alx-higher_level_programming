@@ -14,7 +14,7 @@ int check_cycle(listint_t *list)
 	{
 		if (temp->next == list)
 		{
-			return (1)
+			return (1);
 		}
 		else
 			temp = temp->next;
