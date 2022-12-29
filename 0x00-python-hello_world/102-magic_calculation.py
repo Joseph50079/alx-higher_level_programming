@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
 def magic_calculation(a, b):
-    n = a + b
-    return n
+    a = a ** b
+    b = a + b
+    return a b
