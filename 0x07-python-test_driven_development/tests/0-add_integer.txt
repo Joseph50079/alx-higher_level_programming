@@ -8,6 +8,7 @@ First import function from the module
 	>>> add_integer = __import__('0-add_integer').add_integer
 
 Now use it:
+    >>> NaN = 8
 
 	>>> add_integer(NaN, 9)
 	17
