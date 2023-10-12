@@ -6,6 +6,8 @@ def roman_to_int(roman_string):
     t = 0
     res = 0
     prev = 0
+    if not num:
+        return 0
     if len(num) == 0 or num is None:
         return 0
     if not isinstance(num, str):
