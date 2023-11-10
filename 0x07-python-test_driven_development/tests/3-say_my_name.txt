@@ -29,3 +29,11 @@ Now use it:
 	Traceback (most recent call last):
         ...
 	TypeError: last_name must be a string
+
+	>>> say_my_name('King', 'Authur')
+	My name is King Authur
+
+	>>> say_my_name("Bob", "\n\nklyn")
+	My name is Bob 
+	<BLANKLINE>
+	klyn
