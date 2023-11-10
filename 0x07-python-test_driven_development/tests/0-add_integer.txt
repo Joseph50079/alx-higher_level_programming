@@ -16,6 +16,6 @@ Now use it:
 	>>> add_integer(8.9)
 	106
  
-	>>> add_integer()
+	>>> add_integer() # doctest: +IGNORE_EXCEPTION_DETAIL
 	Traceback (most recent call last):
 	TypeError: a must be an integer
