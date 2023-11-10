@@ -17,4 +17,15 @@ Now use it:
 
 	>>> say_my_name(None)
 	Traceback (most recent call last):
+	...
 	TypeError: first_name must be a string
+
+	>>> say_my_name("Bob", None)
+	Traceback (most recent call last):
+        ...
+	TypeError: last_name must be a string
+
+	>>> say_my_name('King', 7)
+	Traceback (most recent call last):
+        ...
+	TypeError: last_name must be a string
