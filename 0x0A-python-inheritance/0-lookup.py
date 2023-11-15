@@ -2,6 +2,7 @@
 
 """ Module lookup """
 
+
 def lookup(obj):
     """ returns list of attributes and method obj
 
