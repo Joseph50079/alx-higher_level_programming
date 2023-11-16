@@ -1,0 +1,27 @@
+>>> is_same = __import__('2-is_same_class').is_same_class
+
+>>> a = 1
+
+>>> is_same(a, int)
+True
+
+>>> a = True
+
+>>> is_same(a, int)
+False
+
+>>> is_same(a, object)
+True
+
+>>> a = None
+
+>>> is_same(a, object)
+True
+
+>>> a = [1,2,3,2]
+
+>>> is_same(a, list)
+True
+
+>>> is_same(a, object)
+False
