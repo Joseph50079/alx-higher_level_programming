@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
-
 """Module 4-inherits_from.py"""
 
 
 def inherit_from(obj, a_class):
-    """
-    Inherit from a class check for object inheritance.
+    """Inherit from a class check for object inheritance e.g subclass.
 
     Args:
         obj: (class or object type):
@@ -16,4 +14,7 @@ def inherit_from(obj, a_class):
         True if inherited else False
 
     """
-    return issubclass(obj, a_class)
+    if issubclass(obj, a_class):
+        return True
+    else:
+        return False
