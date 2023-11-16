@@ -11,12 +11,12 @@ True
 False
 
 >>> is_same(a, object)
-True
+False
 
 >>> a = None
 
 >>> is_same(a, object)
-True
+False
 
 >>> a = [1,2,3,2]
 
