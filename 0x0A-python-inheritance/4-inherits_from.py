@@ -5,11 +5,14 @@
 
 
 def inherit_from(obj, a_class):
-    """Inherit from a class check for object inheritance
+    """Inherit from a class check for object inheritance.
+
     Args:
         obj: (class or object type):
         a_class: (class type):
+
     Return:
         True if inherited else False
+
     """
     return issubclass(obj, a_class)
