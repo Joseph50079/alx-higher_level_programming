@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-""" Module is_same_class """
+"""Module is_same_class check for attribute instance"""
 
 
 def is_same_class(obj, a_class):
@@ -14,7 +14,7 @@ def is_same_class(obj, a_class):
     Return:
         returns true if obj is class instance else false
     """
-    if is isinstance(obj, a_class):
+    if isinstance(obj, a_class):
         return True
     else:
         return False
