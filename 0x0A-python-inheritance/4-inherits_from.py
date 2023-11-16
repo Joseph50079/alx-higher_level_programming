@@ -3,7 +3,7 @@
 """Module 4-inherits_from.py"""
 
 
-def inherit_from(obj, a_class):
+def inherits_from(obj, a_class):
     """Inherit from a class check for object inheritance e.g subclass.
 
     Args:
