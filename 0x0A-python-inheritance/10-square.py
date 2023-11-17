@@ -2,7 +2,7 @@
 
 """Module 10-square.py"""
 
-Rectangle = __import__("9-rectangle.py").Rectangle
+Rectangle = __import__("9-rectangle").Rectangle
 
 
 class Square(Rectangle):
@@ -14,3 +14,6 @@ class Square(Rectangle):
     def area(self):
         """computes square area"""
         return self.__size ** 2
+    def __str__(self):
+        return ("[{}] {}/{}".format("Rectangle",\
+                                    self.__size, self.__size))
