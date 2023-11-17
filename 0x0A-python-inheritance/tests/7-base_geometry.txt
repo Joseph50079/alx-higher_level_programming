@@ -24,14 +24,14 @@ Traceback (most recent call last):
 ...
 TypeError: cross must be an integer
 
->>> bg.integer_validator()
+>>> bg.integer_validator() # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
->>> bg.integer_validator("hjhb")
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator("hjhb") # doctest: +ELLIPSIS
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 >>> bg.integer_validator("hjhb", (1,))
 Traceback (most recent call last):
 ...
@@ -51,4 +51,4 @@ TypeError: hjhb must be an integer
 >>> bg.integer_validator("hjhb", None)
 Traceback (most recent call last):
 ...
-TypeError: hjhb must be an integer 
+TypeError: hjhb must be an integer
