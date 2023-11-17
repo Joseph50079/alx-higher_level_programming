@@ -1,0 +1,27 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = BaseGeometry()
+
+>>> bg.area()
+Traceback (most recent call last):
+... 
+Exception: area() is not implemented
+
+>>> bg.integer_validator("bull", 87)
+
+>>> bg.integer_validator("cross", 0)
+Traceback (most recent call last):
+...
+ValueError: cross must be greater than 0
+
+>>> bg.integer_validator("cross", "x")
+Traceback (most recent call last):
+...
+TypeError: cross must be an integer
+
+>>> bg.integer_validator("cross", 74.0)
+Traceback (most recent call last):
+...
+TypeError: cross must be an integer
+
+>>> 
