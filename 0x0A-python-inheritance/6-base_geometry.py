@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-"""Module 6-base_geometry.py"""
+"""
+Module 6-base geometry.py
+"""
 
 
 class BaseGeometry:
