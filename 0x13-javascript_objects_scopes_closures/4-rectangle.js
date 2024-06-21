@@ -1,33 +1,33 @@
 #!/usr/bin/node
 
-const process = require('node:process');
-
 class Rectangle {
   constructor (w, h) {
-    if (parseInt(w) > 0 && parseInt(h) > 0) {
+    if ((w = parseInt(w)) > 0 && (h = parseInt(h)) > 0) {
       this.width = w;
       this.height = h;
     }
   }
 
   print () {
+    let row = 'X';
+    for (let i = 1; i < this.width; i++) {
+      row = row + 'X';
+    }
+
     for (let i = 0; i < this.height; i++) {
-      for (let i = 0; i < this.width; i++) {
-        process.stdout.write('X');
-      }
-      console.log();
+      console.log(row);
     }
   }
 
   rotate () {
-    let temp = this.height;
-    this.height = this.width;
-    this.width = temp;
+    const temp = this.width;
+    this.width = this.height;
+    this.height = temp;
   }
 
   double () {
-    this.height *= 2;
-    this.width *= 2;
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
 }
 
