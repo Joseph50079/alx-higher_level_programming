@@ -1,0 +1,1 @@
+## JAVASCRIPT scopes and closures
