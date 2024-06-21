@@ -2,8 +2,6 @@
 
 const myVar = ['C is fun','Python is cool','JavaScript is amazing'];
 
-console.log(myVar);
-
 for (let i = 0; i < myVar.length; i++) {
     console.log(myVar[i]);
 }
