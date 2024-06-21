@@ -5,10 +5,9 @@ const { argv } = require('node:process');
 if (!argv[2]) {
   console.log('No argument');
 } else {
-  let i = 2
+  let i = 2;
   while (argv[i]) {
     console.log(argv[i]);
     i++;
   }
-  
 }
