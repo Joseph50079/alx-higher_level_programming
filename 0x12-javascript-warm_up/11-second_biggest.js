@@ -8,12 +8,23 @@ function maxSecond (a) {
   let max = -Infinity;
   let secondMax = -Infinity;
 
-  for (const i of a) {
+  /*for (const i of a) {
     if (+i > max) {
-      if (secondMax < max) {
-        secondMax = max;
-      }
+      let temp = max;
       max = +i;
+      secondMax = max;
+    }
+  }*/
+
+  for (let i = 2; i < a.length; i++) {
+    if (+a[i] > max) {
+        max = +a[i];
+       // console.log(max);
+    }
+  }
+  for (let i = 2; i < a.length; i++) {
+    if (+a[i] > secondMax && +a[i] < max) {
+        secondMax = +a[i];
     }
   }
   return (secondMax);
