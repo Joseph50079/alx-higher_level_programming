@@ -2,9 +2,7 @@
 
 const { argv } = require('node:process');
 
-if (argv.length <= 2) {
-  console.log('Missing number of occurrences');
-} else if (isNaN(+argv[2])) {
+if (argv.length <= 2 || isNaN(+argv[2])) {
   console.log('Missing number of occurrences');
 } else {
   for (let i = 0; i < +argv[2]; i++) {
