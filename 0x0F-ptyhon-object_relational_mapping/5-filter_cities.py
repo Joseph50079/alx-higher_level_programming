@@ -10,7 +10,7 @@ cur.execute("SELECT c.`name` FROM cities AS c INNER JOIN states AS s ON c.state_
 q_rows = cur.fetchone()
 
 for i in q_rows:
-    print(i, sep=" ")
+    print(i)
 
 cur.close()
 conn.close()
