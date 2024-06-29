@@ -15,7 +15,7 @@ if __name__ == "__main__":
         db=sys.argv[3])
     cur = conn.cursor()
     var = sys.argv[4]
-    query = "SELECT * FROM states WHERE BINARY name = '{}'
+    query = "SELECT * FROM states WHERE BINARY name = '{}'\
     ORDER BY id ASC".format(var)
     cur.execute(query)
 

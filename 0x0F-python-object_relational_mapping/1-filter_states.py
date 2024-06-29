@@ -14,7 +14,8 @@ if __name__ == "__main__":
         db=sys.argv[3])
     cur = conn.cursor()
     cur.execute(
-        "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
+        "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC"
+                )
 
     q_rows = cur.fetchall()
 
