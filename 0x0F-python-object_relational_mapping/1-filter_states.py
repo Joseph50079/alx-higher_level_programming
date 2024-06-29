@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""module print only N from table"""
+
 import MySQLdb
 import sys
 

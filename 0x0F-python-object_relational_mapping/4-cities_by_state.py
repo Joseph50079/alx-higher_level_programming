@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""module join by state"""
+
 import MySQLdb
 import sys
 

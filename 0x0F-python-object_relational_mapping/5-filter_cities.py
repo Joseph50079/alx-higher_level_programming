@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+"""module filter by and print in ", " format"""
 import MySQLdb
 import sys
 

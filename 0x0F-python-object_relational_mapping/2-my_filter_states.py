@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""module print from where name = argument"""
+
 import MySQLdb
 import sys
 

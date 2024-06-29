@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""select and print module"""
+
 import MySQLdb
 import sys
 
