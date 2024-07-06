@@ -1,3 +1,3 @@
 #!/bin/bash
 # print ip address content length
-curl -o /dev/null -s -w "%{http_code}\n" $1 | grep -i 200
+curl -Is -X GET $1 | grep -i 'status' | awk '{print $2 " " $3}' | grep -i 200
