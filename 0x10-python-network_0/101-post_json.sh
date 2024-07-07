@@ -1,3 +1,3 @@
 #!/bin/bash
 # send a json file to the web address
-curl -X POST -F 'file=@'$2 $1
+curl -sX POST -F 'key1=value1' -F 'file=@'$2 $1
