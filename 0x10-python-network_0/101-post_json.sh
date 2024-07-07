@@ -1,3 +1,3 @@
 #!/bin/bash
 # send a json file to the web address
-curl -sX POST -F 'key1=value1' -F 'file=@'$2 $1
+curl -sH "Content-Type: application/json" -d "$(cat $2)" $1
