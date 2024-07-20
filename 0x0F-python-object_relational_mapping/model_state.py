@@ -11,6 +11,9 @@ mymetadata = MetaData()
 Base = declarative_base(metadata=mymetadata)
 
 class State(Base):
+    """
+    Creates State base my Mysql database
+    """
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
