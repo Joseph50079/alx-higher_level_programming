@@ -19,9 +19,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    users = session.query(State).all()
-    for user in users:
-        if 'a' in user.__dict__['name']:
-            session.delete(user)
+    states = session.query(State).filter(
+        State.name.ilike("%a%")).delete(
+        synchronize_session='fetch')
     session.commit()
     session.close()
