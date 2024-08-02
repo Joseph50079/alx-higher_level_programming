@@ -22,4 +22,4 @@ if __name__ == "__main__":
     users = session.query(State).filter(State.name.like("%a%")).all()
     for user in users:
         session.delete(user)
-    session.commit()
+        session.commit()
