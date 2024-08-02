@@ -24,3 +24,4 @@ if __name__ == "__main__":
         if 'a' in user.__dict__['name']:
             session.delete(user)
     session.commit()
+    session.close()
