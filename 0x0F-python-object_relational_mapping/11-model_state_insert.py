@@ -25,4 +25,3 @@ if __name__ == "__main__":
     user = session.query(State).filter_by(name=f"Louisiana").first()
     if user is not None:
         print("{}".format(user.id))
-
