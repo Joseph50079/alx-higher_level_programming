@@ -1,2 +1,2 @@
 // JQuery styling html
-$('header').css('color', 'red')
+$('header').css('color', 'red');
